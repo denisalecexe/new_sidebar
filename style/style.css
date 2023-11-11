@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Colours */
+:root {
+  --black: #000000;
+  --black-menu: #101010;
+  --grey-back: #1c1c1c;
+  --grey-card: #161616;
+  --grey-card-over: #2a2a2a;
+}
+
+body {
+  color: whitesmoke;
+  overflow: hidden;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.col-2,
+.col-10 {
+  height: 100vh;
+}
+
+.sidebar {
+  background-color: var(--black-menu);
+  position: fixed;
+  height: 100%;
+  width: 230px;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+.sidebar li,
+.sidebar h1 {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+
+  color: #818181;
+  display: block;
+}
+
+.sidebar h1 {
+  font-size: 20px;
+}
+
+.sidebar li {
+  font-size: 15px;
+}
+
+.sidebar li:hover,
+.sidebar h1:hover {
+  color: #f1f1f1;
+  cursor: pointer;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar h1 {font-size: 10px;}
+  .sidebar li {font-size: 10px;}
+}
+
+.logo {
+  margin: 15px;
+}
+
+.gallery {
+  background-color: var(--grey-back);
+  height: 100vh;
+  width: 100vw;
+  overflow-y: scroll;
+}
+
+.lenguage {
+  padding: 20px;
+}
+
+.btn {
+  color: white;
+  border-radius: 35px;
+  border: 1px solid gray;
+}
+
+.btn:hover {
+  border: 1px solid white;
+  scale: 1.05;
+}
+
+.lenguage {
+  position: absolute;
+  bottom: 0;
+}
+
+.lenguage .btn {
+  padding-top: 3px!important;
+  padding-bottom: 3px!important;
+}
+
+.card {
+  color: gray;
+  background-color: var(--grey-card);
+  margin: 8px;
+  flex-basis: 200px;
+  cursor: default;
+}
+
+.card:hover {
+  background-color: var(--grey-card-over);
+  cursor: pointer;
+
+}
+
+.card-title {
+  color: white;
+}
+
+.row-gallery {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-left: 230px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}

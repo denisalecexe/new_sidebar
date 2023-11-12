@@ -47,11 +47,11 @@ ul {
 }
 
 .sidebar h1 {
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .sidebar li {
-  font-size: 15px;
+  font-size: 20px;
 }
 
 .sidebar li:hover,
@@ -62,8 +62,8 @@ ul {
 
 @media screen and (max-height: 450px) {
   .sidebar {padding-top: 15px;}
-  .sidebar h1 {font-size: 10px;}
-  .sidebar li {font-size: 10px;}
+  .sidebar h1 {font-size: 20px;}
+  .sidebar li {font-size: 15px;}
 }
 
 .logo {
@@ -125,6 +125,11 @@ ul {
   justify-content: space-around;
   flex-wrap: wrap;
   margin-left: 230px; /* Same as the width of the sidenav */
-  font-size: 28px; /* Increased text to enable scrolling */
+  font-size: 20px; /* Increased text to enable scrolling */
   padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .card-title {font-size: 15px;}
+  .card-text {font-size: 13px;}
 }

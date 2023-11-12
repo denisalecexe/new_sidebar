@@ -66,18 +66,6 @@ ul {
   .sidebar li {font-size: 15px;}
 }
 
-.high-sidebar {
-
-}
-
-.content-high-sidebar {
-  
-}
-
-.logo {
-  margin: 15px;
-}
-
 .gallery {
   background-color: var(--grey-back);
   height: 100vh;
